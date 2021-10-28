@@ -1,1 +1,4 @@
 <h1>HELLO WORLD!</h1>
+<h2>Selected Book: {{selectedBook?.title}}</h2>
+<app-books [books]="books" (bookSelected)='selectedBookEvent($event)'></app-books>
+<app-addbooks></app-addbooks>

@@ -1,0 +1,4 @@
+<p>books works!</p>
+<ul>
+    <li *ngFor="let book of books">Title: {{book.title}} <button (click)="onBookSelected(book)">select</button></li>
+</ul>
