@@ -1,0 +1,35 @@
+li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+
+    button {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 40px;
+        background-color: cadetblue;
+        border: 2px solid cadetblue;
+        border-radius: 5px;
+        color: white;
+    }
+
+    button#delete{
+        background-color: rgb(155, 0, 0);
+        border: 2px solid rgb(155, 0, 0);
+    }
+
+    p {
+        width: 40%;
+        margin-right: auto;
+    }
+}
+
+.style {
+    background-color: gainsboro;
+}
+
+.style2 {
+    background-color: white;
+}

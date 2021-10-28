@@ -16,6 +16,11 @@ export class BooksService {
     this.booksBehaviorSubject.next(this.books);
   }
 
+  public removeBook(book: Book) {
+    this.books = this.books.filter(b => b.id !== book.id);
+    this.booksBehaviorSubject.next(this.books);
+  }
+
   public getBooks(): Observable<Book[]> {
     return this.booksBehaviorSubject.asObservable();
   }

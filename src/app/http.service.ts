@@ -18,4 +18,8 @@ export class HttpService {
     const headers = {'Content-Type': 'application/json'};
     return this.http.post('http://cs3743.fulgentcorp.com:32000/books', book, {headers});
   }
+
+  public deleteBook(book: Book){
+    return this.http.delete('http://cs3743.fulgentcorp.com:32000/books/' + book.id);
+  }
 }

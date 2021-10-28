@@ -26,6 +26,15 @@ export class AddbooksComponent implements OnInit {
         console.log('success');
         console.log(res);
         this.bookService.addBook(book);
+      },
+      (err) => {
+        if(err.status === 200) {
+          console.log('success');
+          this.bookService.addBook(book);
+          return;
+        }
+        console.log('error');
+        console.log(err);
       }
     );
   }
